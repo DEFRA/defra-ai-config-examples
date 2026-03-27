@@ -1,0 +1,40 @@
+theme: jekyll-theme-minimal
+title: GitHub Copilot Setup for Defra
+description: Practical setup guidance for configuring GitHub Copilot in Defra projects — agents, instructions, skills, prompts, and cross-tool configuration.
+baseurl: "/defra-ai-config-examples"
+repository: DEFRA/defra-ai-config-examples
+logo: /assets/images/defra-logo.svg
+version: 1.0.0
+css_version: 1.0.0
+
+# Build settings
+source: .
+sass:
+  style: compressed
+  sass_dir: _sass
+  load_paths:
+    - _sass
+    - node_modules
+
+# Additional settings
+markdown: kramdown
+show_downloads: false
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-relative-links
+
+# Exclude files from processing
+exclude:
+  - .cursor/
+  - .obsidian/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - .gitignore
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - .DS_Store
+  - scripts/
