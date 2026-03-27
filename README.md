@@ -77,10 +77,6 @@ Content exclusion, model pinning, enabling Agent Skills, and Plan Mode.
 
 How to adapt the examples for other AI tools — Claude Code, Cursor, Windsurf, and others. The rules and standards are the same; only the file format changes.
 
-## Standards Gap Analysis
-
-[Standards Gap Analysis](pages/standards-gap-analysis.md) — an analysis of all standards referenced in this template, what is missing, and conflicts Defra needs to resolve. Includes proposed names for this template.
-
 ## How to use the examples
 
 1. Browse the [Getting Started](pages/getting-started.md) guide to understand the configuration structure
