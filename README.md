@@ -13,8 +13,6 @@ AI coding tools work best when given clear, project-specific context. A well-con
 - Understand your architecture and make consistent decisions
 - Save time on repetitive tasks like writing tests, ADRs, and documentation
 
-The aim is to make it real — with AI, technology, and people.
-
 ## What is in this guide
 
 ### [Getting Started](pages/getting-started.md)
