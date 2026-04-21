@@ -21,29 +21,31 @@
 </head>
 
 <body>
+  <a class="govuk-skip-link" href="#main-content">Skip to main content</a>
   <div class="wrapper">
     <div class="navigation">
       {% if site.logo %}
       <div class="logo-container">
         <a href="{{ "/" | relative_url }}">
           <img class="logo-light" src="{{site.logo | relative_url}}" alt="Defra Logo" />
-          <img class="logo-dark" src="{{ "/assets/images/defra-logo-white.svg" | relative_url }}" alt="Defra Logo" />
+          <img class="logo-dark" src="{{ "/assets/images/defra-logo-white.svg" | relative_url }}" alt="" aria-hidden="true" />
         </a>
       </div>
       {% endif %}
 
       <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+        <p class="site-title"><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></p>
         <p>{{ site.description | default: site.github.project_tagline }}</p>
       </header>
 
       <!-- Theme Toggle -->
       <label class="theme-toggle">
-        <input class="theme-toggle-checkbox" type="checkbox">
-        <div class="theme-toggle-switch" style="background: var(--govuk-dark-grey);">
+        <span class="govuk-visually-hidden">Toggle dark mode</span>
+        <input class="theme-toggle-checkbox" type="checkbox" aria-label="Toggle dark mode">
+        <div class="theme-toggle-switch" style="background: var(--govuk-dark-grey);" aria-hidden="true">
           <span class="toggle-icon light" style="display: flex; align-items: center;">
             <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-              fill="none" stroke="white" stroke-width="2">
+              fill="none" stroke="white" stroke-width="2" aria-hidden="true" focusable="false">
               <circle cx="12" cy="12" r="5"></circle>
               <line x1="12" y1="1" x2="12" y2="3"></line>
               <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -57,7 +59,7 @@
           </span>
           <span class="toggle-icon dark" style="display: flex; align-items: center;">
             <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-              fill="none" stroke="currentColor" stroke-width="2">
+              fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
           </span>
@@ -141,9 +143,11 @@
     </div>
 
     <div class="content">
-      <section>
-        {{ content }}
-      </section>
+      <main id="main-content" tabindex="-1">
+        <section>
+          {{ content }}
+        </section>
+      </main>
 
       <!-- Footer -->
       <div class="govuk-footer__meta">

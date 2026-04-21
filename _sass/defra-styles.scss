@@ -66,6 +66,74 @@ a:active {
   background-color: #ffdd00; // GOV.UK yellow
 }
 
+// GOV.UK-style focus indicator (WCAG 2.4.7 Focus Visible, 2.4.11 Focus Not Obscured)
+// Applies a yellow background with a black underline for any focused element.
+:focus-visible {
+  outline: 3px solid transparent;
+  color: #0b0c0c !important;
+  background-color: #ffdd00 !important;
+  box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
+  text-decoration: none;
+}
+
+// Visually hidden helper for screen-reader-only text (matches GOV.UK Frontend)
+.govuk-visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  white-space: nowrap !important;
+}
+
+// Skip link — hidden until focused, then jumps to the top of the page
+.govuk-skip-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  background-color: #ffdd00;
+  color: #0b0c0c;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.govuk-skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 10px 15px;
+  overflow: visible;
+  clip: auto;
+  clip-path: none;
+  white-space: inherit;
+  outline: 3px solid #ffdd00;
+  outline-offset: 0;
+  box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
+}
+
+// Sidebar site title (was previously <h1>; demoted to <p> so each content page's <h1> is unique — WCAG 1.3.1)
+.site-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 0 0 0.25em 0;
+  line-height: 1.2;
+}
+
+.site-title a {
+  text-decoration: none;
+}
+
 // Theme toggle styles
 .theme-toggle {
   position: absolute;

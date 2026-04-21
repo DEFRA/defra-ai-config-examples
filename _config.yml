@@ -5,7 +5,7 @@ baseurl: "/defra-ai-config-examples"
 repository: DEFRA/defra-ai-config-examples
 logo: /assets/images/defra-logo.svg
 version: 1.0.0
-css_version: 1.0.0
+css_version: 1.0.1
 
 # Build settings
 source: .
