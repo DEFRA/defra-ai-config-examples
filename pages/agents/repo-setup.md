@@ -33,7 +33,7 @@ The content below goes into your `.github/agents/repo-setup.agent.md` file:
 ````markdown
 ---
 description: Interviews you about your project and generates the full Copilot configuration
-tools: [codebase, editFiles, runTerminal, fetch, thinking]
+tools: [edit, execute, read, search, web, newWorkspace, vscode/extensions, vscode/getProjectSetupInfo, vscode/installExtension, vscode/runCommand, todos, thinking]
 ---
 
 # Repo Setup

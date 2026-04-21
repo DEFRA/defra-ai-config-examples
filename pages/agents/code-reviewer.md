@@ -16,7 +16,7 @@ The content below goes into your `.github/agents/code-reviewer.agent.md` file:
 ````markdown
 ---
 description: Systematic code reviewer using Defra quality criteria
-tools: [codebase, fetch, findTestFiles, githubRepo, problems, usages, thinking]
+tools: [read, search, web, findTestFiles, githubRepo, usages, changes, thinking]
 ---
 
 # Code Reviewer
