@@ -16,7 +16,7 @@ The content below goes into your `.github/agents/tester.agent.md` file:
 ````markdown
 ---
 description: BDD-focused tester enforcing Defra quality and coverage standards
-tools: [codebase, editFiles, runTerminal, fetch, findTestFiles, problems, usages, thinking]
+tools: [edit, execute, read, search, web, findTestFiles, usages, changes, todos, thinking]
 ---
 
 # Tester

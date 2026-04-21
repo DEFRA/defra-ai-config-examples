@@ -39,7 +39,7 @@ Follow this structure:
 ```markdown
 ---
 description: One-line summary of what this agent does
-tools: [list, of, tools, it, can, use]
+tools: [edit, execute, read, search, web, todos, thinking]
 ---
 
 # Agent Name
@@ -62,7 +62,10 @@ What this agent is and its expertise.
 
 **Tips:**
 - Keep the description under 100 characters — it appears in the agent picker
-- List only the tools the agent needs (e.g., `editFiles`, `runTerminal`, `codebase`)
+- Prefer **tool sets** (`edit`, `execute`, `read`, `search`, `web`, `agent`) over individual tool names — each set bundles all the related built-in tools so the agent has full Agent-mode capability without a long brittle list
+- Add `todos` for any multi-step agent — it gives the agent (and you) a visible progress checklist
+- For read-only review agents, omit `edit` and `execute` to enforce the principle of least privilege
+- VS Code [silently ignores unknown tool names](https://code.visualstudio.com/docs/copilot/customization/custom-agents#_custom-agent-file-structure){:target="_blank"} (opens in new tab), so MCP and extension tools can be listed safely
 - Reference instruction files rather than restating rules
 - Define clear boundaries — what the agent does and does not do
 

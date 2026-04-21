@@ -18,7 +18,7 @@ The content below goes into your `.github/agents/accessibility-advisor.agent.md`
 ````markdown
 ---
 description: Reviews and fixes UI code for WCAG 2.2 AA compliance and GOV.UK Design System patterns
-tools: [codebase, editFiles, fetch, problems, usages, thinking]
+tools: [edit, read, search, web, usages, changes, todos, thinking]
 ---
 
 # Accessibility Advisor

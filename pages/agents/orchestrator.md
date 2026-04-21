@@ -20,7 +20,7 @@ The content below goes into your `.github/agents/orchestrator.agent.md` file:
 ````markdown
 ---
 description: Plans and orchestrates complex multi-step development tasks across specialist agents
-tools: [codebase, editFiles, runTerminal, fetch, githubRepo, problems, thinking]
+tools: [edit, execute, read, search, web, agent, githubRepo, changes, todos, thinking]
 ---
 
 # Orchestrator
@@ -87,7 +87,7 @@ If MCP servers are configured in `.vscode/mcp.json`, you can use them from this 
 Example with GitHub MCP enabled:
 
 ```yaml
-tools: [codebase, editFiles, runTerminal, fetch, githubRepo, problems, thinking, github]
+tools: [edit, execute, read, search, web, agent, githubRepo, changes, todos, thinking, github]
 ```
 
 ## Rules

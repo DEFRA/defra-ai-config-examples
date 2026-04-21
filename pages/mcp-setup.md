@@ -63,12 +63,36 @@ The `github` entry here matches the `"github"` key in the `mcp.json` `servers` o
 
 ## Common tool combinations
 
+These examples use VS Code **tool sets** (`edit`, `execute`, `read`, `search`, `web`, `agent`) — each one bundles all the related built-in tools (e.g. `execute` includes `runInTerminal`, `createAndRunTask`, `testFailure`, `runNotebookCell`, `getTerminalOutput`). Using tool sets gives an agent full Agent-mode capability in one entry instead of a long brittle list, and is the recommended pattern in the [official VS Code chat tools reference](https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features#_chat-tools){:target="_blank"} (opens in new tab).
+
 | Use case | Tools to include |
 |----------|-----------------|
-| Standard development | `codebase, editFiles, runTerminal, problems, usages, thinking` |
-| With GitHub integration | Add `github` |
+| Full autonomous developer (default) | `edit, execute, read, search, web, findTestFiles, githubRepo, usages, changes, todos, thinking` |
+| Tester (TDD, runs and fixes test failures) | `edit, execute, read, search, web, findTestFiles, usages, changes, todos, thinking` |
+| Read-only reviewer | `read, search, web, findTestFiles, githubRepo, usages, changes, thinking` |
+| Frontend / accessibility (no terminal) | `edit, read, search, web, usages, changes, todos, thinking` |
+| Orchestrator with subagents | Add `agent` |
+| Repo / workspace scaffolding | Add `newWorkspace, vscode/extensions, vscode/getProjectSetupInfo, vscode/installExtension, vscode/runCommand` |
+| With GitHub MCP integration | Add `github` |
 | With Playwright end-to-end testing | Add `playwright` |
-| Read-only review (code reviewer) | `codebase, fetch, findTestFiles, githubRepo, problems, usages, thinking` |
+
+### What the tool sets bundle
+
+- `edit` — `createDirectory`, `createFile`, `editFiles`, `editNotebook`
+- `execute` — `runInTerminal`, `createAndRunTask`, `testFailure`, `runNotebookCell`, `getTerminalOutput`
+- `read` — `readFile`, `problems`, `terminalLastCommand`, `terminalSelection`, `getNotebookSummary`, `readNotebookCellOutput`
+- `search` — `codebase`, `fileSearch`, `textSearch`, `listDirectory`, `usages`, `changes`
+- `web` — `fetch`
+- `agent` — `runSubagent` (delegate to other agents)
+
+### Other built-in tools worth knowing
+
+- `todos` — visible progress checklist (essential for any multi-step agent)
+- `newWorkspace` — scaffold a new VS Code workspace
+- `selection` — current editor selection
+- `vscode/extensions`, `vscode/installExtension`, `vscode/runCommand`, `vscode/getProjectSetupInfo` — VS Code-specific scaffolding helpers
+
+VS Code [silently ignores tool names it does not recognise](https://code.visualstudio.com/docs/copilot/customization/custom-agents#_custom-agent-file-structure){:target="_blank"} (opens in new tab), so you can safely add MCP server tools (e.g. `github`, `playwright`) and extension-contributed tools without breaking the agent if they aren't installed.
 
 ## Security considerations
 

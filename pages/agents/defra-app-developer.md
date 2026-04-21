@@ -18,7 +18,7 @@ The content below goes into your `.github/agents/defra-app-developer.agent.md` f
 ````markdown
 ---
 description: Builds Defra-compliant applications following all software development standards
-tools: [codebase, editFiles, runTerminal, fetch, findTestFiles, githubRepo, problems, usages, thinking]
+tools: [edit, execute, read, search, web, findTestFiles, githubRepo, usages, changes, todos, thinking]
 ---
 
 # Defra App Developer
