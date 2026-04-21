@@ -55,8 +55,7 @@ Start with the action — "Adds...", "Fixes...", "Updates..." — not "This PR..
 
 ## Checklist
 
-- [ ] Linter passes (`npx eslint .`)
-- [ ] Code is formatted (`npx prettier --check .`)
+- [ ] Linter passes (`npx neostandard`)
 - [ ] No PII in logs or error messages
 - [ ] No secrets or credentials committed
 - [ ] SonarCloud quality gate passes

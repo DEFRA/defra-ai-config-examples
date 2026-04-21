@@ -16,7 +16,7 @@ The content below goes into your `.github/instructions/frontend.instructions.md`
 {% raw %}
 ````markdown
 ---
-applyTo: "**/*.njk,**/*.html,**/*.css"
+applyTo: "**/*.njk,**/*.html,**/*.css,**/*.scss"
 ---
 
 # Frontend / User Interface

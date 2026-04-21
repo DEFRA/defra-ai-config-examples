@@ -33,7 +33,7 @@ Use the Defra-approved stack for this project:
 - **Language**: Vanilla JavaScript with JSDoc for type annotations — do not use TypeScript without an approved exception
 - **Server framework**: Hapi (current major version)
 - **Module system**: ES modules by default, CommonJS only where required (e.g. Jest config)
-- **Linter**: ESLint + Prettier
+- **Linter**: neostandard ([Defra JS standard](https://defra.github.io/software-development-standards/standards/javascript_standards/))
 - **Test framework**: Jest for most Node.js projects; CDP frontend projects use Vitest — follow whatever is already set up in the project
 - **Configuration**: `convict` with `convict-format-with-validator` — never access `process.env` outside the config module
 - **Container**: Docker with Defra base images (`defradigital/node`, `defradigital/node-development`)
@@ -46,7 +46,7 @@ Use the Defra-approved stack for this project:
 2. Check existing code for patterns — follow the conventions already established in the codebase
 3. Write the code in small, testable increments
 4. Write unit tests alongside the code — target ≥90% global coverage, ≥95% for core business logic, and 100% for error handling and security-critical paths
-5. After every change: run the linter (`npx eslint .`) and formatter (`npx prettier --check .`) and fix all issues
+5. After every change: run the linter (`npx neostandard`) and fix all issues
 6. After every change: run the full test suite (`npm test`) and confirm all tests pass — do not move on until green
 7. Before committing, verify every item in the pre-commit checklist below
 
@@ -54,7 +54,7 @@ Use the Defra-approved stack for this project:
 
 Before marking work as done or creating a pull request, verify all of the following:
 
-- [ ] Linter passes with zero warnings or errors (`npx eslint .`) and code is formatted (`npx prettier --check .`)
+- [ ] Linter passes with zero warnings or errors (`npx neostandard`)
 - [ ] All existing tests still pass — no regressions introduced
 - [ ] New or changed behaviour has corresponding test coverage
 - [ ] Unit test coverage meets tiered targets (≥90% global, ≥95% business logic, 100% error handling and security paths) and has not decreased from the project or SonarCloud baseline
@@ -173,7 +173,7 @@ Before marking work as done or creating a pull request, verify all of the follow
 - Do not use TypeScript without an approved exception
 - Do not install frontend JavaScript frameworks (React, Vue, Angular)
 - Do not use Express — use Hapi
-- Do not use Helm 2 or 3 — use Helm 4 or later if using AKS - ask explicitly if this is required.
+- For AKS or EKS, use Helm 3 or later — never Helm 2
 - Do not log PII under any circumstances
 - Do not commit directly to the main branch. Follow trunk based development practices with feature branches and pull requests.
 - Do not reduce test coverage below the project baseline or SonarCloud baseline.

@@ -81,7 +81,7 @@ src/
 
 All code must pass these checks before merging:
 
-- Linter passes (`npx eslint .`) and code is formatted (`npx prettier --check .`)
+- Linter passes (`npx neostandard`) — do not extend or modify the ruleset, do not set `noStyle: true`
 - All tests pass (`npm test`)
 - Unit test coverage ≥90% (no decrease from baseline or SonarCloud baseline)
 - SonarQube / SonarCloud quality gate passes
@@ -103,34 +103,17 @@ All code must pass these checks before merging:
 
 ## Allowed dependencies
 
-<!-- Edit this list for your service -->
+Full approved/discouraged dependency lists live in scoped instruction files (e.g. `node-backend.instructions.md`). Critical packages — do not introduce in any file:
 
-Use these approved packages:
-
-| Package | Purpose |
-|---------|---------|
-| `@hapi/hapi` | HTTP server |
-| `@hapi/boom` | HTTP error responses |
-| `@hapi/crumb` | CSRF protection |
-| `@hapi/blankie` | Content Security Policy |
-| `@hapi/inert` | Static file serving |
-| `@hapi/vision` | Template rendering (Nunjucks) |
-| `@hapi/yar` | Session management |
-| `joi` | Schema validation (standalone — do not use deprecated `@hapi/joi`) |
-| `nunjucks` | Server-side templating |
-| `winston` | Structured JSON logging |
-| `mongodb` | Native MongoDB driver (for MongoDB projects — do not use Mongoose) |
-| `knex` / `objection` | SQL query builder / ORM (for PostgreSQL projects) |
-
-**Discouraged:**
-- `express`, `fastify`, `koa` — use Hapi
-- `@hapi/joi` — deprecated, use standalone `joi`
-- `mongoose` — use the native MongoDB driver
-- `moment` — use native `Intl.DateTimeFormat` or `date-fns`
-- `lodash` — use native array/object methods
-- `request` — deprecated, use `undici` or Node.js native `fetch`
-- `jquery` — not needed with progressive enhancement
-- Large runtime-only polyfills — keep bundles minimal
+- `express`, `fastify`, `koa` (use Hapi)
+- `@hapi/joi` (use standalone `joi`)
+- `mongoose` (use native `mongodb` driver)
+- `moment` (use `Intl.DateTimeFormat` or `date-fns`)
+- `lodash` (use native methods)
+- `request`, `axios` (use native `fetch` or `undici`)
+- `jquery` (progressive enhancement only)
+- `eslint`, `prettier`, `standard` (use `neostandard` per [Defra JS standard](https://defra.github.io/software-development-standards/standards/javascript_standards/))
+- `typescript` (requires approved exception)
 
 New dependencies must be widely used, actively maintained, and compatible with the current Node.js LTS version.
 
@@ -154,17 +137,13 @@ New dependencies must be widely used, actively maintained, and compatible with t
 
 When generating or editing code for this project:
 
-- Follow the conventions already established in the codebase — check existing patterns first
+- Follow conventions already in the codebase — check existing patterns first
 - Prefer modifying existing files over creating new ones when the change fits naturally
-- Provide complete, minimal diffs touching only the necessary files
-- Keep changes minimal and focused on the request — do not refactor unrelated code
-- Always include or update tests for changed behaviour — co-locate tests with the existing test layout
+- Provide minimal diffs touching only the necessary files; do not refactor unrelated code
+- Always include or update tests for changed behaviour
 - For any form or reusable UI pattern, propose or extend a Nunjucks macro using GOV.UK components
 - Keep solutions DRY: before adding new utilities, search for similar code in `src/utils/` or existing routes
-- Justify any security-sensitive deviation (e.g. disabling CSRF or loosening CSP) in code comments and default to the most restrictive safe option
-- Explain any non-obvious decisions in code comments
-- If a request conflicts with these instructions, flag the conflict rather than silently ignoring the rules
-- If generating code that would use a discouraged library, skip tests, hardcode a secret, or break a quality gate — call it out explicitly and do not proceed silently
+- If a request conflicts with these instructions, or would use a discouraged library, skip tests, hardcode a secret, or break a quality gate — flag it explicitly and do not proceed silently
 - If a standards violation cannot be avoided (e.g. integration constraint), document the deviation in a code comment and raise it for review
 
 ## Licence
