@@ -33,7 +33,7 @@ Provide these values (edit them before running this prompt):
 - **Service name**: [e.g. Waste exemptions service]
 - **Service description**: [e.g. Allows waste operators to register exemptions from environmental permits]
 - **Tech stack**: [Node.js + Hapi | .NET + ASP.NET Core Minimal API | both]
-- **Frontend**: [Nunjucks + GOV.UK Frontend | Razor Pages | API only (no frontend)]
+- **Frontend**: [Nunjucks + GOV.UK Frontend | API only (no frontend)]
 - **Database**: [PostgreSQL | MongoDB | DynamoDB | none]
 - **Hosting**: [AWS ECS | Azure AKS | Azure App Service | other]
 - **Auth method**: [Azure AD | Magic link | Basic session | none]
