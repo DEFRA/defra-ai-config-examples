@@ -35,7 +35,7 @@ applyTo: "**/*.cs,**/*.csproj"
 
 ## Framework
 
-- Use ASP.NET Core Minimal APIs for new services — do not use MVC controllers
+- Use ASP.NET Core Minimal APIs for new services — do not use MVC controllers, Razor Pages, Blazor, or any other .NET UI framework. Per [Defra .NET Standards](https://defra.github.io/software-development-standards/standards/net_standards/){:target="_blank"} (opens in new tab), .NET is for backend services only; frontends must be built with Node.js + Hapi + GOV.UK Frontend (Nunjucks).
 - Register endpoints using `MapGet`, `MapPost`, `MapPut`, `MapDelete`
 - Use the built-in DI container; do not develop frontends in .NET
 

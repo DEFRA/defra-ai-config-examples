@@ -50,6 +50,7 @@ Apply these standards when generating or reviewing code in a Defra digital servi
 - Use .NET Active LTS version only
 - Use C# latest stable with nullable reference types enabled
 - Use `record` types for immutable data
+- .NET is for backend services and APIs only — do not use Razor Pages, Blazor, MVC views, or any other .NET UI framework. Frontends must be built with Node.js + Hapi + GOV.UK Frontend (Nunjucks). See [Defra .NET Standards](https://defra.github.io/software-development-standards/standards/net_standards/).
 
 ## Approved and discouraged packages
 

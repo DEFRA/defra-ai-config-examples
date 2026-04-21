@@ -47,7 +47,7 @@ Start by gathering project details. Ask these questions one at a time, waiting f
 1. **Service name** — What is the name of this service? (e.g. "Waste exemptions service")
 2. **Service description** — One sentence describing what the service does.
 3. **Tech stack** — Node.js + Hapi, .NET + ASP.NET Core Minimal API, Python + FastAPI, or a combination?
-4. **Frontend** — Nunjucks + GOV.UK Frontend, Razor Pages, React, or API only (no frontend)?
+4. **Frontend** — Nunjucks + GOV.UK Frontend, or API only (no frontend)?
 5. **Database** — PostgreSQL, MongoDB, DynamoDB, or none?
 6. **Hosting** — AWS ECS, Azure AKS, Azure App Service, CDP, or other?
 7. **Auth method** — Azure AD, magic link, basic session, or none?
