@@ -4,8 +4,8 @@ description: Practical setup guidance for configuring GitHub Copilot in Defra pr
 baseurl: "/defra-ai-config-examples"
 repository: DEFRA/defra-ai-config-examples
 logo: /assets/images/defra-logo.svg
-version: 1.0.0
-css_version: 1.0.1
+version: 1.1.0
+css_version: 1.1.0
 
 # Build settings
 source: .
