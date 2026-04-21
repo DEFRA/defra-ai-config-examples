@@ -50,7 +50,7 @@ Include:
 - Project paths — match the actual directory layout of this repository
 - Naming conventions (kebab-case directories, camelCase JS files, PascalCase C# files)
 - Branching and version control (trunk-based, conventional commits, squash-and-merge)
-- Quality gates (ESLint + Prettier for JS, dotnet format for C#, SonarCloud quality gate, 90% coverage)
+- Quality gates (neostandard for JS, dotnet format for C#, ruff for Python, SonarCloud quality gate, 90% coverage)
 - Allowed dependencies table — list the packages this project actually uses
 - Discouraged dependencies — Express, lodash, moment, jquery, @hapi/joi
 - Security rules — OWASP, no PII in logs, joi validation, parameterised queries

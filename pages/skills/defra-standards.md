@@ -98,8 +98,8 @@ If the service runs on the Defra Core Delivery Platform (CDP):
 - Use Docker with Defra base images:
   - `defradigital/node` (production)
   - `defradigital/node-development` (development/CI)
-  - `defradigital/dotnet` (production .NET)
-  - `defradigital/dotnet-development` (development/CI .NET)
+  - `defradigital/dotnetcore` (production .NET)
+  - `defradigital/dotnetcore-development` (development/CI .NET)
 - Do not use the generic `node:lts` or `mcr.microsoft.com/dotnet` images directly
 
 ## Architecture
@@ -128,7 +128,7 @@ Route handler → validates input (joi) → calls service → renders view or re
 
 ## Quality gates
 
-- Linter passes (`npx eslint .`) and code is formatted (`npx prettier --check .`)
+- Linter passes (`npx neostandard`) — do not extend or modify the ruleset
 - All tests pass (`npm test`)
 - Unit test coverage ≥90% — must not decrease from project or SonarCloud baseline
 - SonarCloud quality gate passes (SonarWay profile) — no new bugs, vulnerabilities, or code smells

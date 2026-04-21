@@ -71,7 +71,7 @@ src/
 - Use vanilla JavaScript with JSDoc for type annotations — do not use TypeScript without an approved exception
 - Use `const` by default, `let` only when reassignment is needed, never `var`
 - Use `async`/`await` — no callbacks or raw `.then()` chains
-- Lint with ESLint and format with Prettier
+- Lint with neostandard — the Defra-mandated JS linter
 - Pages must work without JavaScript enabled (progressive enhancement)
 
 ## Architecture

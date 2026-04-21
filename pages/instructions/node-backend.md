@@ -29,7 +29,7 @@ applyTo: "**/*.js,**/*.mjs"
 - Use `const` by default, `let` only when reassignment is required, never `var`
 - Use `async/await` — do not use callbacks or raw `.then()` chains
 - Use `===` and `!==` for all equality checks
-- Lint with ESLint and format with Prettier
+- Lint with [neostandard](https://github.com/neostandard/neostandard) (Defra-mandated since April 2025) — do not extend the ruleset or set `noStyle: true`. Do not use ESLint, Prettier, or Standard JS.
 - Use containerisation with Docker with Defra base images (`defradigital/node`, `defradigital/node-development`)
 
 ## Hapi framework

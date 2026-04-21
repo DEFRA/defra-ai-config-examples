@@ -5,7 +5,7 @@ title: Python Backend Instructions
 
 # Python Backend Instructions — Example
 
-This is an example scoped instruction file for Python backend code. It activates when Copilot is working on Python files. Copy it into `.github/instructions/python-backend.instructions.md` in your repository.
+This is an example scoped instruction file for Python backend code. It activates when Copilot is working on Python files. Per [Defra Python standards](https://defra.github.io/software-development-standards/standards/python_coding_standards/){:target="_blank"} (opens in new tab), Python is for AI or data-science backends only — use Node.js + Hapi for general backend and frontend services. Copy it into `.github/instructions/python-backend.instructions.md` in your repository.
 
 ## Example file contents
 
@@ -32,7 +32,7 @@ applyTo: "**/*.py"
 - Maximum function length: 50 lines, maximum nesting depth: 3 levels
 - Use Google-style docstrings for all public functions and classes
 - Indent with 4 spaces, maximum line length 79 characters
-- Use `black` for formatting and `ruff` for linting
+- Use `ruff` for formatting, linting, code style, and complexity — the Defra-mandated all-in-one tool. Do not use `black`, `flake8`, `pylint`, or `isort`.
 - Use containerisation with Docker with Defra base images
 
 ## Framework (FastAPI)
