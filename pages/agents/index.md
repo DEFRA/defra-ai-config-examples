@@ -31,11 +31,7 @@ Agent files live in `.github/agents/` and use the `.agent.md` extension.
 | [Accessibility Advisor]({{ "/pages/agents/accessibility-advisor" | relative_url }}) | WCAG 2.2 AA and GOV.UK Design System compliance | Reviewing or fixing UI templates, forms, and components |
 | [Orchestrator]({{ "/pages/agents/orchestrator" | relative_url }}) | Plans and delegates complex tasks to specialist agents | Large features, multi-phase work, multi-agent workflows |
 | [Repo Setup]({{ "/pages/agents/repo-setup" | relative_url }}) | Interviews you about your project and generates the full Copilot config | Setting up a new repo, adding Copilot to an existing project |
-| [LAP Inovation documentation]({{ "/pages/agents/LAP-Inovation-documentation.agent" | relative_url }}) | Produces factual, evidence-based system documentation (HLD, LLD, ADRs, Runbook) for the current codebase. No refactoring | Producing Documentation |
-| [LAP Inovation implementation]({{ "/pages/agents/LAP-Inovation-implementation.agent" | relative_url }}) | Implements one approved migration slice per pull request, aligned to the intelligent migration programme, with tests, documentation, and rollback awareness | Implements Migration per pull request |
-| [LAP Inovation Intelligent Migration]({{ "/pages/agents/LAP-Inovation-intelligent-migration.agent" | relative_url }}) | Designs and governs an end-to-end intelligent application migration programme, including team model, phased roadmap, risk controls, and success metrics. | Design and Governance usecases |
-| [LAP Inovation Modernise to modular monolith]({{ "/pages/agents/LAP-Inovation-modernise-to-modular-monolith" | relative_url }}) | Proposes a target architecture and an incremental, reversible migration plan from the current monolith. | Target Architecture roposal |
-| [LAP Inovation Testing]({{ "/pages/agents/LAP-Inovation-testing.agent" | relative_url }}) | Establishes a baseline test strategy and automated tests to protect existing behaviour; adds CI. | Test Strategy Usecases |
+
 ## Writing your own agents
 
 Follow this structure:

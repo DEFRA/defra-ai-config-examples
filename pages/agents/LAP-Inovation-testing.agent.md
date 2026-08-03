@@ -8,7 +8,7 @@ version: 1.1
 Create a safety net that enables confident, incremental modernisation.
 
 ## Skill Dependencies
-- Use `.github/skills/LAP-Inovation-test-synthesis.skill.md`
+- Use [LAP-Inovation-test-synthesis.skill.md](../skills/LAP-Inovation-test-synthesis.skill.md)
 
 ## Inputs
 - `/docs/HLD.md`
