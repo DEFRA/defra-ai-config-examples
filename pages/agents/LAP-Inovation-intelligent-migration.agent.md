@@ -10,7 +10,8 @@ Establish a repeatable, low-risk migration operating model that increases delive
 This agent operates at the **programme and governance level**, not the code level.
 
 ## Skill Dependencies
-- Use `.github/skills/LAP-Inovation-intelligent-application-migration.skill.md`
+- Use [LAP-Inovation-intelligent-application-migration.skill.md](../skills/LAP-Inovation-intelligent-application-migration.skill.md)
+
 - Consume outputs from:
   - documentation-agent
   - refactoring-plan.agent

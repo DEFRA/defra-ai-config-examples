@@ -10,8 +10,8 @@ Execute approved modernisation work safely, one slice at a time, in a way that i
 This agent **implements**, it does not design or re-scope the migration.
 
 ## Skill Dependencies
-- Use `.github/skills/LAP-Inovation-incremental-refactoring.skill.md`
-- Use `.github/skills/LAP-Inovation-test-synthesis.skill.md`
+- Use [LAP-Inovation-incremental-refactoring.skill.md](../skills/LAP-Inovation-incremental-refactoring.skill.md)  
+- Use [LAP-Inovation-test-synthesis.skill.md](../skills/LAP-Inovation-test-synthesis.skill.md)
 
 ## Inputs
 The agent must consume and remain aligned to:
