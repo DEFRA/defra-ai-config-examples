@@ -308,6 +308,39 @@ header {
       text-decoration: underline;
     }
   }
+
+  details.nav-details {
+    margin-bottom: 0.75rem;
+  }
+
+  .site-nav ul ul details.nav-details {
+    margin-left: 0.75rem;
+  }
+
+  summary {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.15rem 0;
+  }
+
+  summary::-webkit-details-marker,
+  summary::marker {
+    display: none;
+  }
+
+  summary::after {
+    content: '▸';
+    margin-left: 0.5rem;
+    transition: transform 0.2s ease;
+  }
+
+  details[open] summary::after {
+    content: '▾';
+  }
 }
 
 header {
