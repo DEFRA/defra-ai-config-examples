@@ -24,12 +24,12 @@ Establish a repeatable, low-risk migration operating model that increases delive
 This agent operates at the **programme and governance level**, not the code level.
 
 ## Skill Dependencies
-- Use [lap-innovation-intelligent-application-migration.skill.md](../skills/lap-gitHub-copilot/lap-innovation-intelligent-application-migration.skill.md)
+- Use [lap-innovation-intelligent-application-migration.skill.md](../../skills/lap-gitHub-copilot/lap-innovation-intelligent-application-migration.md)
 
 - Consume outputs from:
-  - ../agents/lap-gitHub-copilot/lap-innovation-documentation.agent.md
-  - ../agents/lap-gitHub-copilot/lap-innovation-refactoring-plan.agent.md
-  - ../agents/lap-gitHub-copilot/lap-innovation-testing.agent.md
+  - ../agents/lap-gitHub-copilot/lap-innovation-documentation.md
+  - ../agents/lap-gitHub-copilot/lap-innovation-refactoring-plan.md
+  - ../agents/lap-gitHub-copilot/lap-innovation-testing.md
 
 ## Inputs
 - System documentation (/docs/HLD.md, /docs/LLD.md)

@@ -5,9 +5,7 @@ title: LAP Innovation Architecture Reasoning Skill
 
 # Defra Standards Skill — Example
 
-This is an example Agent Skill that packages Defra software development standards so agents can discover and load them automatically. Copy the `defra-standards/` folder into `.github/skills/` in your repository.
-
-Unlike an instruction file (which is always active), this skill activates only when Copilot is working on a Defra service codebase — reducing noise for non-Defra projects that use the same agent configuration.
+This is an example Agent Skill that Propose a target architecture and an incremental migration plan that is achievable and reversible. Copy it into `.github/skills/{your_file_name}.skill.md` in your repository.
 
 ## Example file contents
 

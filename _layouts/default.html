@@ -17,6 +17,17 @@
     .content {
       overflow-x: hidden;
     }
+    
+    .site-nav a.active {
+      color: var(--link-hover-color);
+      font-weight: 700;
+      text-decoration: underline;
+    }
+    
+    .site-nav summary.active {
+      color: var(--link-hover-color);
+      font-weight: 700;
+    }
   </style>
 </head>
 
@@ -366,6 +377,76 @@
         setTheme(e.matches ? 'dark' : 'light');
       }
     });
+  </script>
+
+  <script>
+    // Active navigation link highlighting and menu expansion
+    const highlightActiveNavLink = () => {
+      // Get current page path
+      const currentPath = window.location.pathname;
+      
+      // Find all nav links
+      const navLinks = document.querySelectorAll('.site-nav a');
+      
+      navLinks.forEach((link) => {
+        const href = link.getAttribute('href');
+        // Normalize paths for comparison (remove trailing slashes and baseurl)
+        const normalizedHref = href.replace(/\/$/, '').replace(/\/defra-ai-config-examples/, '');
+        const normalizedPath = currentPath.replace(/\/$/, '').replace(/\/defra-ai-config-examples/, '');
+        
+        if (normalizedHref === normalizedPath || href === currentPath) {
+          // Add active class to the link
+          link.classList.add('active');
+          
+          // Expand all parent details elements
+          let parent = link.closest('details');
+          while (parent) {
+            if (parent.classList.contains('nav-details')) {
+              parent.setAttribute('open', '');
+              // Also add active class to the summary if it doesn't have child links
+              const summary = parent.querySelector('summary');
+              if (summary && !summary.querySelector('a')) {
+                summary.classList.add('active');
+              }
+            }
+            parent = parent.parentElement.closest('details');
+          }
+        }
+      });
+      
+      // Also check for summaries that contain links (like GitHub Copilot summary)
+      const allSummaries = document.querySelectorAll('.site-nav summary a');
+      allSummaries.forEach((link) => {
+        const href = link.getAttribute('href');
+        const normalizedHref = href.replace(/\/$/, '').replace(/\/defra-ai-config-examples/, '');
+        const normalizedPath = currentPath.replace(/\/$/, '').replace(/\/defra-ai-config-examples/, '');
+        
+        if (normalizedHref === normalizedPath || href === currentPath) {
+          link.classList.add('active');
+          const summary = link.closest('summary');
+          if (summary) {
+            summary.classList.add('active');
+            // Expand parent details
+            let parent = summary.closest('details');
+            while (parent) {
+              if (parent.classList.contains('nav-details')) {
+                parent.setAttribute('open', '');
+              }
+              parent = parent.parentElement.closest('details');
+            }
+          }
+        }
+      });
+    };
+    
+    // Run on page load
+    document.addEventListener('DOMContentLoaded', highlightActiveNavLink);
+    // Also run immediately in case DOM is already ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', highlightActiveNavLink);
+    } else {
+      highlightActiveNavLink();
+    }
   </script>
 </body>
 

@@ -26,8 +26,8 @@ This agent **plans** modernisation. It does not implement it.
  
 ## Skill Dependencies
 
-- Use [lap-innovation-system-discovery.skill.md](../skills/lap-gitHub-copilot/lap-innovation-system-discovery.skill.md)
-- Use [lap-innovation-architecture-reasoning.skill.md](../skills/lap-gitHub-copilot/lap-innovation-architecture-reasoning.skill.md)
+- Use [lap-innovation-system-discovery.skill.md](../../skills/lap-gitHub-copilot/lap-innovation-system-discovery.md)
+- Use [lap-innovation-architecture-reasoning.skill.md](../../skills/lap-gitHub-copilot/lap-innovation-architecture-reasoning.md)
 
 ## Inputs
 
