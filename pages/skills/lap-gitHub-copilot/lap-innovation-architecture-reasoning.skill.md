@@ -1,4 +1,20 @@
 ---
+layout: default
+title: LAP Innovation Architecture Reasoning Skill
+---
+
+# Defra Standards Skill — Example
+
+This is an example Agent Skill that packages Defra software development standards so agents can discover and load them automatically. Copy the `defra-standards/` folder into `.github/skills/` in your repository.
+
+Unlike an instruction file (which is always active), this skill activates only when Copilot is working on a Defra service codebase — reducing noise for non-Defra projects that use the same agent configuration.
+
+## Example file contents
+
+---
+
+````markdown
+---
 name: architecture-reasoning
 version: 1.0
 purpose: Propose a target architecture and an incremental migration plan that is achievable and reversible.
@@ -85,3 +101,7 @@ For each significant decision, write an ADR:
 ### Migration Plan must include:
 - a table of phases with acceptance criteria
 - a clear “next action” for Implementation Agent
+
+---
+
+[Back to skills index]({{ "/pages/skills" | relative_url }}) · [Back to Getting Started]({{ "/pages/getting-started" | relative_url }})

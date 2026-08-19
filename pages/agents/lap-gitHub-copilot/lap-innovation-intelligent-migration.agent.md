@@ -1,4 +1,18 @@
 ---
+layout: default
+title: LAP Intelligent Migration Agent
+---
+
+# LAP Intelligent Migration Agent — Example
+
+This is an example `.agent.md` file for an intelligent migration agent. Its review criteria are drawn from [Defra software development standards](https://github.com/DEFRA/software-development-standards){:target="_blank"} (opens in new tab) — the single source of truth for Defra coding practices. Copy it into `.github/agents/{your_file_name}.agent.md` in your repository.
+
+## Example file contents
+
+---
+
+````markdown
+---
 name: intelligent-migration-agent
 description: Designs and governs an end-to-end intelligent application migration programme, including team model, phased roadmap, risk controls, and success metrics.
 version: 1.0
@@ -10,12 +24,12 @@ Establish a repeatable, low-risk migration operating model that increases delive
 This agent operates at the **programme and governance level**, not the code level.
 
 ## Skill Dependencies
-- Use [LAP-Inovation-intelligent-application-migration.skill.md](../skills/LAP-Inovation-intelligent-application-migration.skill.md)
+- Use [lap-innovation-intelligent-application-migration.skill.md](../skills/lap-gitHub-copilot/lap-innovation-intelligent-application-migration.skill.md)
 
 - Consume outputs from:
-  - documentation-agent
-  - refactoring-plan.agent
-  - testing-agent
+  - ../agents/lap-gitHub-copilot/lap-innovation-documentation.agent.md
+  - ../agents/lap-gitHub-copilot/lap-innovation-refactoring-plan.agent.md
+  - ../agents/lap-gitHub-copilot/lap-innovation-testing.agent.md
 
 ## Inputs
 - System documentation (/docs/HLD.md, /docs/LLD.md)
@@ -61,3 +75,8 @@ Create or update:
 ## Governance
 - Delivered via pull request - do not execute this instruction
 - Human review required before implementation agents are invoked
+
+---
+
+[Back to agents index]({{ "/pages/agents" | relative_url }}) · [Back to Getting Started]({{ "/pages/getting-started" | relative_url }})
+

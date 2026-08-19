@@ -1,11 +1,21 @@
 ---
+layout: default
+title: LAP LAP Modernise to Modular Monolith Agent
+---
 
+# LAP Modernise to Modular Monolith Agent — Example
+
+This is an example `.agent.md` file for an intelligent migration agent. Its review criteria are drawn from [Defra software development standards](https://github.com/DEFRA/software-development-standards){:target="_blank"} (opens in new tab) — the single source of truth for Defra coding practices. Copy it into `.github/agents/{your_file_name}.agent.md` in your repository.
+
+## Example file contents
+
+---
+
+````markdown
+---
 name: modernise-to-modular-monolith-agent
-
 description: Proposes a target architecture and an incremental, reversible migration plan from the current monolith.
-
 version: 1.1
-
 ---
  
 ## Purpose
@@ -16,8 +26,8 @@ This agent **plans** modernisation. It does not implement it.
  
 ## Skill Dependencies
 
-- Use [LAP-Inovation-system-discovery.skill.md](../skills/LAP-Inovation-system-discovery.skill.md)
-- Use [LAP-Inovation-architecture-reasoning.skill.md](../skills/LAP-Inovation-architecture-reasoning.skill.md)
+- Use [lap-innovation-system-discovery.skill.md](../skills/lap-gitHub-copilot/lap-innovation-system-discovery.skill.md)
+- Use [lap-innovation-architecture-reasoning.skill.md](../skills/lap-gitHub-copilot/lap-innovation-architecture-reasoning.skill.md)
 
 ## Inputs
 
@@ -137,3 +147,7 @@ The user's choice must be captured in:
 ## Governance
 
 - Human approval required before testing or implementation begins
+
+---
+
+[Back to agents index]({{ "/pages/agents" | relative_url }}) · [Back to Getting Started]({{ "/pages/getting-started" | relative_url }})
