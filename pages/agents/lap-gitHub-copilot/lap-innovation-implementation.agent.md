@@ -1,4 +1,18 @@
 ---
+layout: default
+title: LAP Implementation Agent
+---
+
+# LAP Implementation Agent — Example
+
+This is an example `.agent.md` file for an implementation agent. Its review criteria are drawn from [Defra software development standards](https://github.com/DEFRA/software-development-standards){:target="_blank"} (opens in new tab) — the single source of truth for Defra coding practices. Copy it into `.github/agents/{your_file_name}.agent.md` in your repository.
+
+## Example file contents
+
+---
+
+````markdown
+---
 name: implementation-agent
 description: Implements one approved migration slice per pull request, aligned to the intelligent migration programme, with tests, documentation, and rollback awareness.
 version: 1.2
@@ -10,8 +24,8 @@ Execute approved modernisation work safely, one slice at a time, in a way that i
 This agent **implements**, it does not design or re-scope the migration.
 
 ## Skill Dependencies
-- Use [LAP-Inovation-incremental-refactoring.skill.md](../skills/LAP-Inovation-incremental-refactoring.skill.md)  
-- Use [LAP-Inovation-test-synthesis.skill.md](../skills/LAP-Inovation-test-synthesis.skill.md)
+- Use [lap-innovation-incremental-refactoring.skill.md](../skills/lap-gitHub-copilot/lap-innovation-incremental-refactoring.skill.md)  
+- Use [lap-innovation-test-synthesis.skill.md](../skills/lap-gitHub-copilot/lap-innovation-test-synthesis.skill.md)
 
 ## Inputs
 The agent must consume and remain aligned to:
@@ -51,3 +65,7 @@ The agent must consume and remain aligned to:
 - Green CI is mandatory
 - Human review is required before merge
 - Any deviation from the Intelligent Migration Plan must be surfaced explicitly in the PR description
+
+---
+
+[Back to agents index]({{ "/pages/agents" | relative_url }}) · [Back to Getting Started]({{ "/pages/getting-started" | relative_url }})

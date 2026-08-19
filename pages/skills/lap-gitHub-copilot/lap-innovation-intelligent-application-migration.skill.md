@@ -1,4 +1,20 @@
 ---
+layout: default
+title: LAP Innovation Intelligent Application Migration Skill
+---
+
+# Defra Standards Skill — Example
+
+This is an example Agent Skill that packages Defra software development standards so agents can discover and load them automatically. Copy the `defra-standards/` folder into `.github/skills/` in your repository.
+
+Unlike an instruction file (which is always active), this skill activates only when Copilot is working on a Defra service codebase — reducing noise for non-Defra projects that use the same agent configuration.
+
+## Example file contents
+
+---
+
+````markdown
+---
 name: incremental-refactoring
 version: 1.1
 purpose: "Implement one approved migration slice safely in a factory-compatible way small, reviewable, reversible, and fully tested."
@@ -92,3 +108,7 @@ Tie assumptions explicitly to:
 - Programme increases success probability relative to industry baseline
 - Risks are managed explicitly, not implicitly
 - Outputs are suitable for executive review and funding approval
+
+---
+
+[Back to skills index]({{ "/pages/skills" | relative_url }}) · [Back to Getting Started]({{ "/pages/getting-started" | relative_url }})

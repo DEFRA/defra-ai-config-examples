@@ -1,4 +1,20 @@
 ---
+layout: default
+title: LAP Innovation System Discovery Skill
+---
+
+# Defra Standards Skill — Example
+
+This is an example Agent Skill that packages Defra software development standards so agents can discover and load them automatically. Copy the `defra-standards/` folder into `.github/skills/` in your repository.
+
+Unlike an instruction file (which is always active), this skill activates only when Copilot is working on a Defra service codebase — reducing noise for non-Defra projects that use the same agent configuration.
+
+## Example file contents
+
+---
+
+````markdown
+---
 name: system-discovery
 version: 1.0
 purpose: Build an accurate, evidence-based map of the current system (structure, flows, dependencies, data).
@@ -72,3 +88,7 @@ When referencing code, always include:
 
 Example:
 - `Services/CheckoutService.cs::ProcessCheckoutAsync` — orchestrates payment + order creation.
+
+---
+
+[Back to skills index]({{ "/pages/skills" | relative_url }}) · [Back to Getting Started]({{ "/pages/getting-started" | relative_url }})

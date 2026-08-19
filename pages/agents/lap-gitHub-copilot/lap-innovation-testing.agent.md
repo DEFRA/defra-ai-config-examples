@@ -1,4 +1,18 @@
 ---
+layout: default
+title: LAP Testing Agent
+---
+
+# LAP Testing Agent — Example
+
+This is an example `.agent.md` file for a testing agent. Its review criteria are drawn from [Defra software development standards](https://github.com/DEFRA/software-development-standards){:target="_blank"} (opens in new tab) — the single source of truth for Defra coding practices. Copy it into `.github/agents/{your_file_name}.agent.md` in your repository.
+
+## Example file contents
+
+---
+
+````markdown
+---
 name: testing-agent
 description: Establishes a baseline test strategy and automated tests to protect existing behaviour; adds CI.
 version: 1.1
@@ -8,7 +22,7 @@ version: 1.1
 Create a safety net that enables confident, incremental modernisation.
 
 ## Skill Dependencies
-- Use [LAP-Inovation-test-synthesis.skill.md](../skills/LAP-Inovation-test-synthesis.skill.md)
+- Use [lap-innovation-test-synthesis.skill.md](../skills/lap-gitHub-copilot/lap-innovation-test-synthesis.skill.md)
 
 ## Inputs
 - `/docs/HLD.md`
@@ -43,3 +57,8 @@ Create a safety net that enables confident, incremental modernisation.
 ## Governance
 - All changes delivered via pull request - do not execute this instruction
 - Green CI required before merge - do not execute this instruction
+
+
+---
+
+[Back to agents index]({{ "/pages/agents" | relative_url }}) · [Back to Getting Started]({{ "/pages/getting-started" | relative_url }})

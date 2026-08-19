@@ -1,4 +1,20 @@
 ---
+layout: default
+title: LAP Innovation Incremental Refactoring Skill
+---
+
+# Defra Standards Skill — Example
+
+This is an example Agent Skill that packages Defra software development standards so agents can discover and load them automatically. Copy the `defra-standards/` folder into `.github/skills/` in your repository.
+
+Unlike an instruction file (which is always active), this skill activates only when Copilot is working on a Defra service codebase — reducing noise for non-Defra projects that use the same agent configuration.
+
+## Example file contents
+
+---
+
+````markdown
+---
 name: incremental-refactoring
 version: 1.1
 purpose: Implement one approved migration slice safely in a factory-compatible way small, reviewable, reversible, and fully tested.
@@ -113,3 +129,7 @@ Every PR must include in the description:
 - Green CI is mandatory
 - Human review is required before merge
 - Any deviation from the Intelligent Migration Plan is surfaced explicitly in the PR description
+
+---
+
+[Back to skills index]({{ "/pages/skills" | relative_url }}) · [Back to Getting Started]({{ "/pages/getting-started" | relative_url }})
