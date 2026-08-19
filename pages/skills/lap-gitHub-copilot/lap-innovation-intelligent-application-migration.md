@@ -106,7 +106,5 @@ Tie assumptions explicitly to:
 - Programme increases success probability relative to industry baseline
 - Risks are managed explicitly, not implicitly
 - Outputs are suitable for executive review and funding approval
-
+````
 ---
-
-[Back to skills index]({{ "/pages/skills" | relative_url }}) · [Back to Getting Started]({{ "/pages/getting-started" | relative_url }})

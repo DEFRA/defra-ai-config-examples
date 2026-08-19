@@ -99,7 +99,5 @@ For each significant decision, write an ADR:
 ### Migration Plan must include:
 - a table of phases with acceptance criteria
 - a clear “next action” for Implementation Agent
-
+````
 ---
-
-[Back to skills index]({{ "/pages/skills" | relative_url }}) · [Back to Getting Started]({{ "/pages/getting-started" | relative_url }})

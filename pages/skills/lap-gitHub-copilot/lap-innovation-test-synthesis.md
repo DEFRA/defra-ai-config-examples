@@ -75,7 +75,5 @@ Document:
 - avoid brittle UI tests for baseline
 - prioritise API/service-level integration tests
 - keep tests readable and named by behaviour
-
+````
 ---
-
-[Back to skills index]({{ "/pages/skills" | relative_url }}) · [Back to Getting Started]({{ "/pages/getting-started" | relative_url }})

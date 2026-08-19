@@ -60,7 +60,5 @@ Create or update the following:
 ## Governance
 - All output must be delivered via a pull request
 - Human review is mandatory before merge
-
+````
 ---
-
-[Back to agents index]({{ "/pages/agents" | relative_url }}) · [Back to Getting Started]({{ "/pages/getting-started" | relative_url }})

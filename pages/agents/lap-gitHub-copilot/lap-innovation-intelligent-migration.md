@@ -75,8 +75,5 @@ Create or update:
 ## Governance
 - Delivered via pull request - do not execute this instruction
 - Human review required before implementation agents are invoked
-
+````
 ---
-
-[Back to agents index]({{ "/pages/agents" | relative_url }}) · [Back to Getting Started]({{ "/pages/getting-started" | relative_url }})
-

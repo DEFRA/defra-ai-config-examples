@@ -57,8 +57,5 @@ Create a safety net that enables confident, incremental modernisation.
 ## Governance
 - All changes delivered via pull request - do not execute this instruction
 - Green CI required before merge - do not execute this instruction
-
-
+````
 ---
-
-[Back to agents index]({{ "/pages/agents" | relative_url }}) · [Back to Getting Started]({{ "/pages/getting-started" | relative_url }})

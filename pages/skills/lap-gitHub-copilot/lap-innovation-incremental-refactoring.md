@@ -127,7 +127,5 @@ Every PR must include in the description:
 - Green CI is mandatory
 - Human review is required before merge
 - Any deviation from the Intelligent Migration Plan is surfaced explicitly in the PR description
-
+````
 ---
-
-[Back to skills index]({{ "/pages/skills" | relative_url }}) · [Back to Getting Started]({{ "/pages/getting-started" | relative_url }})

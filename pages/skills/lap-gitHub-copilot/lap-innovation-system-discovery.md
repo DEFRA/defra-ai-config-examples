@@ -86,7 +86,5 @@ When referencing code, always include:
 
 Example:
 - `Services/CheckoutService.cs::ProcessCheckoutAsync` — orchestrates payment + order creation.
-
+````
 ---
-
-[Back to skills index]({{ "/pages/skills" | relative_url }}) · [Back to Getting Started]({{ "/pages/getting-started" | relative_url }})

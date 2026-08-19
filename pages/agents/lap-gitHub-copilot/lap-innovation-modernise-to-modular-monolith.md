@@ -147,7 +147,5 @@ The user's choice must be captured in:
 ## Governance
 
 - Human approval required before testing or implementation begins
-
+````
 ---
-
-[Back to agents index]({{ "/pages/agents" | relative_url }}) · [Back to Getting Started]({{ "/pages/getting-started" | relative_url }})
