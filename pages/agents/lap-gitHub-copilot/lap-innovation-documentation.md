@@ -24,7 +24,7 @@ Make the existing system legible and accurate before any modernisation work begi
 This agent documents **what exists today**, not what should exist in the future.
 
 ## Skill Dependencies
-- Use [lap-innovation-system-discovery.skill.md](../skills/lap-gitHub-copilot/lap-innovation-system-discovery.skill.md)  as the operating procedure.
+- Use [lap-innovation-system-discovery.skill.md](../../skills/lap-gitHub-copilot/lap-innovation-system-discovery.md)  as the operating procedure.
 
 ## Scope and Guardrails
 - Documentation only. No production code changes.

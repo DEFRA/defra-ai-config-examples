@@ -22,7 +22,7 @@ version: 1.1
 Create a safety net that enables confident, incremental modernisation.
 
 ## Skill Dependencies
-- Use [lap-innovation-test-synthesis.skill.md](../skills/lap-gitHub-copilot/lap-innovation-test-synthesis.skill.md)
+- Use [lap-innovation-test-synthesis.skill.md](../../skills/lap-gitHub-copilot/lap-innovation-test-synthesis.md)
 
 ## Inputs
 - `/docs/HLD.md`

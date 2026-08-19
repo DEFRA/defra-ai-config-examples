@@ -3,7 +3,7 @@ layout: default
 title: LAP Implementations Agents - Examples for GitHub Copilot
 ---
 
-# Agents
+# LAP Implementations Agents - Examples for GitHub Copilot
 
 Legacy Application Modernisation (LAP) agents are specialised AI personas you can invoke in GitHub Copilot Chat to support the safe, incremental modernisation of legacy applications. Each agent has a defined role, expertise, and workflow that shapes how Copilot responds.
 
@@ -25,15 +25,15 @@ Agent files live in `.github/agents/` and use the `.agent.md` extension.
 
 | Agent | Purpose |
 |-------|---------|
-| [LAP Innovation Documentation]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-documentation.agent" | relative_url }}) | Produces factual, evidence-based system documentation (HLD, LLD, ADRs, Runbook) for the current codebase. No refactoring. |
+| [LAP Innovation Documentation]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-documentation" | relative_url }}) | Produces factual, evidence-based system documentation (HLD, LLD, ADRs, Runbook) for the current codebase. No refactoring. |
 
-| [LAP Innovation Implementation]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-implementation.agent" | relative_url }}) | Implements one approved migration slice per pull request, aligned to the intelligent migration programme, with tests, documentation, and rollback awareness. |
+| [LAP Innovation Implementation]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-implementation" | relative_url }}) | Implements one approved migration slice per pull request, aligned to the intelligent migration programme, with tests, documentation, and rollback awareness. |
 
-| [LAP Innovation Intelligent Migration]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-intelligent-migration.agent" | relative_url }}) | Establish a repeatable, low-risk migration operating model that increases delivery success probability using AI-augmented teams. |
+| [LAP Innovation Intelligent Migration]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-intelligent-migration" | relative_url }}) | Establish a repeatable, low-risk migration operating model that increases delivery success probability using AI-augmented teams. |
 
 | [LAP Inovation Modernise to Modular Monolith]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-modernise-to-modular-monolith" | relative_url }}) | Design a realistic modernisation path that can be executed safely and incrementally. |
 
-| [LAP Innovation Testing]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-testing.agent" | relative_url }}) | Create a safety net that enables confident, incremental modernisation. |
+| [LAP Innovation Testing]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-testing" | relative_url }}) | Create a safety net that enables confident, incremental modernisation. |
 
 ## Writing your own agents
 

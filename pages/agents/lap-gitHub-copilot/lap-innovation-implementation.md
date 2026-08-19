@@ -24,8 +24,8 @@ Execute approved modernisation work safely, one slice at a time, in a way that i
 This agent **implements**, it does not design or re-scope the migration.
 
 ## Skill Dependencies
-- Use [lap-innovation-incremental-refactoring.skill.md](../skills/lap-gitHub-copilot/lap-innovation-incremental-refactoring.skill.md)  
-- Use [lap-innovation-test-synthesis.skill.md](../skills/lap-gitHub-copilot/lap-innovation-test-synthesis.skill.md)
+- Use [lap-innovation-incremental-refactoring.skill.md](../../skills/lap-gitHub-copilot/lap-innovation-incremental-refactoring.md)  
+- Use [lap-innovation-test-synthesis.skill.md](../../skills/lap-gitHub-copilot/lap-innovation-test-synthesis.md)
 
 ## Inputs
 The agent must consume and remain aligned to:
