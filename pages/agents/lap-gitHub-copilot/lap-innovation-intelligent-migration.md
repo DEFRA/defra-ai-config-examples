@@ -76,4 +76,5 @@ Create or update:
 - Delivered via pull request - do not execute this instruction
 - Human review required before implementation agents are invoked
 ````
----
+
+[Back to GitHub Copilot agents]({{ "/pages/agents/lap-gitHub-copilot" | relative_url }}) · [Back to Agents]({{ "/pages/agents" | relative_url }})

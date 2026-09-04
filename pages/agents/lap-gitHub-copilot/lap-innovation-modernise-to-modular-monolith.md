@@ -148,4 +148,5 @@ The user's choice must be captured in:
 
 - Human approval required before testing or implementation begins
 ````
----
+
+[Back to GitHub Copilot agents]({{ "/pages/agents/lap-gitHub-copilot" | relative_url }}) · [Back to Agents]({{ "/pages/agents" | relative_url }})

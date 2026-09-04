@@ -25,6 +25,32 @@ Agent files live in `.github/agents/` and use the `.agent.md` extension.
 
 | Agent | Purpose |
 |-------|---------|
+| [LAP Innovation Application Developer]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-application-developer.agent" | relative_url }}) | Extracts workflows, behaviours, domain concepts, and business rules from legacy .NET and VB source code. |
+
+| [LAP Innovation Business Analyst]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-business-analyst.agent" | relative_url }}) | Extracts ubiquitous language, bounded contexts, subdomains, and context maps from legacy application evidence. |
+
+| [LAP Innovation Cloud Tier Architect]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-cloud-tier-architect.agent" | relative_url }}) | Applies Defra CCoE cloud service-tier requirements to the product requirements and architecture. |
+
+| [LAP Innovation Completeness Auditor]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-completeness-auditor.agent" | relative_url }}) | Reconciles the build against the feature traceability manifest so functionality is not lost. |
+
+| [LAP Innovation Database Analyst]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-database-analyst.agent" | relative_url }}) | Extracts schema, stored procedure logic, triggers, constraints, and persistence patterns from legacy SQL Server code. |
+
+| [LAP Innovation Digital Content Curator]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-digital-content-curator.agent" | relative_url }}) | Converts screenshots and interview transcripts into curated material for downstream analysis. |
+
+| [LAP Innovation Digital Content Processor]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-digital-content-processor.agent" | relative_url }}) | Processes one raw file using a specified skill for the digital content curator. |
+
+| [LAP Innovation Feature Writer]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-feature-writer.agent" | relative_url }}) | Writes one standards-compliant feature specification from the relevant product requirements content. |
+
+| [LAP Innovation Interaction Analyst]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-interaction-analyst.agent" | relative_url }}) | Combines HTML mockups and curated transcripts into interaction analysis and user workflows. |
+
+| [LAP Innovation LAP Orchestrator]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-lap-orchestrator.agent" | relative_url }}) | Runs the end-to-end LAP modernisation pipeline from content curation through feature traceability. |
+
+| [LAP Innovation Modernisation Example Writer]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-modernisation-example-writer.agent" | relative_url }}) | Writes a standards-compliant modernisation example from the project evidence and codebase. |
+
+| [LAP Innovation PRD to Features]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-prd-to-features.agent" | relative_url }}) | Decomposes a product requirements document into deliverable, traceable feature specifications. |
+
+| [LAP Innovation Product Manager]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-product-manager.agent" | relative_url }}) | Synthesises analysis outputs into a comprehensive product requirements document. |
+
 | [LAP Innovation Documentation]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-documentation" | relative_url }}) | Produces factual, evidence-based system documentation (HLD, LLD, ADRs, Runbook) for the current codebase. No refactoring. |
 
 | [LAP Innovation Implementation]({{ "/pages/agents/lap-gitHub-copilot/lap-innovation-implementation" | relative_url }}) | Implements one approved migration slice per pull request, aligned to the intelligent migration programme, with tests, documentation, and rollback awareness. |

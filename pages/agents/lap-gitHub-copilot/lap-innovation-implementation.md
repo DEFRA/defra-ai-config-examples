@@ -66,4 +66,5 @@ The agent must consume and remain aligned to:
 - Human review is required before merge
 - Any deviation from the Intelligent Migration Plan must be surfaced explicitly in the PR description
 ````
----
+
+[Back to GitHub Copilot agents]({{ "/pages/agents/lap-gitHub-copilot" | relative_url }}) · [Back to Agents]({{ "/pages/agents" | relative_url }})

@@ -58,4 +58,5 @@ Create a safety net that enables confident, incremental modernisation.
 - All changes delivered via pull request - do not execute this instruction
 - Green CI required before merge - do not execute this instruction
 ````
----
+
+[Back to GitHub Copilot agents]({{ "/pages/agents/lap-gitHub-copilot" | relative_url }}) · [Back to Agents]({{ "/pages/agents" | relative_url }})

@@ -61,4 +61,5 @@ Create or update the following:
 - All output must be delivered via a pull request
 - Human review is mandatory before merge
 ````
----
+
+[Back to GitHub Copilot agents]({{ "/pages/agents/lap-gitHub-copilot" | relative_url }}) · [Back to Agents]({{ "/pages/agents" | relative_url }})
