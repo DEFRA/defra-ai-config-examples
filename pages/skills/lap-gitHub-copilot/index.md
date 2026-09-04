@@ -11,7 +11,7 @@ Skills follow the [Agent Skills open standard](https://agentskills.io/specificat
 
 ## Available examples
 
-| Agent | Purpose |
+| Skill | Purpose |
 |-------|---------|
 | [LAP Innovation Architecture Reasoning]({{ "/pages/skills/lap-gitHub-copilot/lap-innovation-architecture-reasoning" | relative_url }}) | Propose a target architecture and an incremental migration plan that is achievable and reversible. |
 
@@ -22,5 +22,17 @@ Skills follow the [Agent Skills open standard](https://agentskills.io/specificat
 | [LAP Inovation System Discovery]({{ "/pages/skills/lap-gitHub-copilot/lap-innovation-system-discovery" | relative_url }}) | Build an accurate, evidence-based map of the current system (structure, flows, dependencies, data) |
 
 | [LAP Innovation Test Synthesis]({{ "/pages/skills/lap-gitHub-copilot/lap-innovation-test-synthesis" | relative_url }}) | Create a safety net that protects current behaviour and supports incremental modernisation. |
+
+The following skills are available as ZIP downloads. Extract each archive into your repository's `.github/skills/` directory.
+
+| Skill | Download | Purpose |
+|-------|----------|---------|
+| LAP Innovation Architecture Guidance | [Download ZIP]({{ "/pages/skills/lap-gitHub-copilot/architecture-guidance.zip" | relative_url }}) | Guidance for creating architecture outputs during LAP modernisation. |
+| LAP Innovation Cloud Tier Requirements | [Download ZIP]({{ "/pages/skills/lap-gitHub-copilot/cloud-tier-requirements.zip" | relative_url }}) | Cloud platform and service-tier requirements for LAP architecture work. |
+| LAP Innovation Curate Transcript | [Download ZIP]({{ "/pages/skills/lap-gitHub-copilot/curate-transcript.zip" | relative_url }}) | Curate transcript content for evidence-based LAP analysis. |
+| LAP Innovation HTML Pack | [Download ZIP]({{ "/pages/skills/lap-gitHub-copilot/html-pack.zip" | relative_url }}) | Produce an HTML documentation pack from LAP analysis outputs. |
+| LAP Innovation Image to HTML | [Download ZIP]({{ "/pages/skills/lap-gitHub-copilot/image-to-html.zip" | relative_url }}) | Convert supplied images into HTML material for LAP analysis. |
+| LAP Innovation Infrastructure Diagram | [Download ZIP]({{ "/pages/skills/lap-gitHub-copilot/infra-diagram.zip" | relative_url }}) | Create infrastructure diagrams from evidenced LAP architecture requirements. |
+| LAP Innovation Validate Mermaid | [Download ZIP]({{ "/pages/skills/lap-gitHub-copilot/validate-mermaid.zip" | relative_url }}) | Validate Mermaid diagrams used in LAP documentation and architecture outputs. |
 
 [Back to Getting Started]({{ "/pages/getting-started" | relative_url }})
