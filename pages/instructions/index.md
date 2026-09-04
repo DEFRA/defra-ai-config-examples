@@ -45,6 +45,8 @@ This means the instruction only activates when Copilot is working on JavaScript 
 | [Documentation]({{ "/pages/instructions/docs" | relative_url }}) | `**/*.md` | READMEs, ADRs, JSDoc, XML doc comments, inline comment discipline |
 | [Testing]({{ "/pages/instructions/testing" | relative_url }}) | `**/*.test.js`, `**/*.test.mjs`, `**/test/**` | Jest, BDD naming, AAA pattern, coverage targets, mock discipline |
 | [Real-world example]({{ "/pages/instructions/real-world-example" | relative_url }}) | — | Complete instructions file for a Node.js/Hapi/Nunjucks GOV.UK service |
+| [LAP Delivery Standards]({{ "/pages/instructions/lap-gitHub-copilot/lap-delivery-standards.instructions" | relative_url }}) | `output/**`, `**/features/**`, `**/*PRD*.md`, `**/architecture-requirements.md` | Defra and GDS standards, testing, accessibility, security, observability, cloud requirements, and traceability |
+| [LAP Analysis and Documentation Depth]({{ "/pages/instructions/lap-gitHub-copilot/lap-analysis-depth.instructions" | relative_url }}) | `output/**`, `**/features/**`, `**/*PRD*.md`, `**/*-analysis.md` | Exhaustive, quantified, evidence-cited analysis and documentation requirements |
 
 ## Writing your own instructions
 
